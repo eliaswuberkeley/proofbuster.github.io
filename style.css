@@ -1,0 +1,262 @@
+/* General page styling */
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 200vh;
+  margin: 0;
+  background-color: #252527;
+  padding: 10px;
+}
+
+h1 {
+  color: #ff7b00;
+  margin-bottom: 20px;
+  font-family: "Quicksand";
+}
+
+.menuBar {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 1vh;
+}
+
+#infoButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #252527;
+}
+
+#homeButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #252527;
+}
+
+#infoButtonImage {
+  display: flex;
+  width: 32px;
+  height: 32px;
+}
+
+#logoImage {
+  display: flex;
+  width: 64px;
+  height: 64px;
+}
+
+#homeButtonImage {
+  display: flex;
+  width: 32px;
+  height: 32px;
+}
+
+#title {
+  padding: 12px;
+  font-size: 52px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filterDropdown {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#filterDropdown h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#filterDropdown label {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#customDropdown {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#conjectureDropdown {
+  width: 50%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  color: white;
+  border: 2px solid #ff7b00;
+  background-color: #252527;
+  border-radius: 5px;
+}
+
+/* Top button styling */
+#topGenerateConjecture {
+  background-color: #ff7b00;
+  color: white;
+  padding: 2px 6px;
+  font-size: 32px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#topGenerateConjecture:hover {
+  background-color: #b86314;
+}
+
+/* Individual filter section (Difficulty and Tags) */
+.filter-section {
+  width: 45%;
+}
+
+/* Bottom button row styling */
+.button-row {
+  display: flex;
+  gap: 20px;
+}
+
+button:hover {
+  background-color: #b86314;
+}
+
+/* Styling for the output section */
+#output {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Quicksand";
+  max-width: 100%;
+}
+
+.proof-container {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    height: 60vh;
+}
+
+.proof-container-child {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 50vh;
+}
+
+#textbox {
+  width: 100%;
+  height: 50vh;
+  padding: 0px;
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 0px;
+  border: 2px solid #ff7b00;
+  color: #ffffff;
+  background-color: #19191a;
+  border-radius: 5px;
+  resize: none;
+}
+
+#customTextbox {
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 0px;
+  border: 2px solid #ff7b00;
+  color: #ffffff;
+  background-color: #19191a;
+  border-radius: 5px;
+}
+
+#outputbox {
+  scoll: true;
+  width: 100%;
+  height: 50vh;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 2px solid #ff7b00;
+  color: #ffffff;
+  background-color: #19191a;
+  border-radius: 5px;
+  resize: none;
+  overflow: auto;
+  white-space: normal;
+}
+  
+/* Specific button colors */
+#giveFeedback {
+  background-color: #ff7b00;
+}
+
+#giveFeedback:hover {
+  background-color: #b86314;
+}
+
+#checkProof {
+  background-color: #ff7b00;
+}
+
+#checkProof:hover {
+  background-color: #b86314;
+}
+
+#infobox {
+  color: #ffffff;
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proof Buster</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+  </head>
+  <body>
+    <div class="menuBar">
+      <a href="info.html"><button id="infoButton"><img src="./assets/info.png" id="infoButtonImage"></img></button></a>
+      <img src="./assets/logo.png" id="logoImage"></img>
+    </div>
+    <h1 id="title">Proof Buster</h1>
+    <div class="top-row">
+      <!-- Filter button on the left -->
+      <button id="filterButton">Filter</button>
+
+      <!-- Dropdown menu for conjectures on the right -->
+      <select id="conjectureDropdown">
+        <option disabled selected>Select a conjecture...</option>
+      </select>
+
+      <!-- Button to generate a random conjecture -->
+      <button id="generateConjecture">Random</button>
+      <button id="customButton">Custom</button>
+    </div>
+
+    <!-- Dropdown for filters (hidden initially) -->
+    <div id="filterDropdown" style="display: none">
+      <div class="filter-container">
+        <div class="filter-section">
+          <h3>Select Difficulty:</h3>
+          <label
+            ><input type="checkbox" name="difficulty" value="easy" />
+            Easy</label
+          ><br />
+          <label
+            ><input type="checkbox" name="difficulty" value="medium" />
+            Medium</label
+          ><br />
+          <label
+            ><input type="checkbox" name="difficulty" value="hard" />
+            Hard</label
+          ><br />
+        </div>
+        <div class="filter-section">
+          <h3>Select Tags:</h3>
+          <label
+            ><input type="checkbox" name="tags" value="direct" />Direct</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+              value="contrapositive"
+            />Contrapositive</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+              value="contradiction"
+            />Contradiction</label
+          ><br />
+          <label><input type="checkbox" name="tags" value="cases" />Cases</label
+          ><br /><label
+            ><input
+              type="checkbox"
+              name="tags"
+              value="induction"
+            />Induction</label
+          ><br /><label
+            ><input
+              type="checkbox"
+              name="tags"
+              value="irrationals"
+            />Irrationals</label
+          ><br />
+          <label
+            ><input type="checkbox" name="tags" value="integers" />
+            Integers</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+              value="rationals"
+            />Rationals</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+              value="irrationals"
+            />Irrationals</label
+          ><br /><label
+            ><input type="checkbox" name="tags" value="graphs" />Graphs</label
+          ><br /><label
+            ><input type="checkbox" name="tags" value="sets" />Sets</label
+          ><br />
+          <label
+            ><input type="checkbox" name="tags" value="classic" />Classic</label
+          ><br />
+        </div>
+      </div>
+    </div>
+
+    <div id="customDropdown" style="display: none">
+      <div class="custom-container">
+        <div class="custom-section">
+          <textarea id="customTextbox" placeholder="Type your statement here..."></textarea>
+        </div>
+        <div class="custom-section">
+          <button id="generateCustom">Generate</button>
+        </div>
+      </div>
+    </div>
+    <!-- Textbox for writing the proof -->
+    <div class="proof-container">
+      <div class="proof-container-child">
+        <!-- Display the conjecture here -->
+        <div id="output"></div>
+        <textarea id="textbox" placeholder="Type your proof here..."></textarea>
+      </div>
+      <div class="proof-container-child">
+        <div id="outputbox" scrolling="yes"></div>
+        <!-- Buttons aligned side by side -->
+        <div class="button-row">
+          <!-- Button for giving feedback (guidance) on the proof -->
+          <button id="giveFeedback" style="display: none">
+            Give Feedback on Proof
+          </button>
+
+          <!-- Button for checking the proof (AI full solution) -->
+          <button id="checkProof" style="display: none">Check Proof</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
